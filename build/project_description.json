@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "CYD_ESP32_LVGL_EEZ",
-    "project_version":    "26a5f92-dirty",
+    "project_version":    "15c897b-dirty",
     "project_path":       "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ",
     "idf_path":           "C:/Users/colin/esp/v5.4.1/esp-idf",
     "build_dir":          "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/build",
@@ -850,7 +850,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/app_BB3.cpp", "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/app_gui.cpp", "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/app_main.cpp", "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/ui/eez-flow.cpp", "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/ui/images.c", "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/ui/screens.c", "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/ui/styles.c", "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/ui/ui.c", "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/ui/ui_font_montserrat_semi_bold_14.c", "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/ui/ui_font_montserrat_semi_bold_20.c", "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/ui/vars.c" ],
+            "sources": [ "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/app_gui.cpp", "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/main.c", "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/ui/eez-flow.cpp", "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/ui/images.c", "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/ui/screens.c", "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/ui/styles.c", "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/ui/ui.c", "C:/Users/colin/Documents/Electrium-Moblity/LVGL-TESTINGV2/CYD_ESP32_LVGL_EEZ/main/ui/vars.c" ],
             "include_dirs": [ ".", "./include" ]
         },
         "mbedtls": {

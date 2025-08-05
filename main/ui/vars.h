@@ -52,6 +52,8 @@ extern const char *get_var_ch2_v();
 extern void set_var_ch2_v(const char *value);
 extern const char *get_var_ch2_a();
 extern void set_var_ch2_a(const char *value);
+extern int32_t get_var_speed_speedometer();
+extern void set_var_speed_speedometer(int32_t value);
 
 
 #ifdef __cplusplus

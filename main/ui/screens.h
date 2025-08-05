@@ -9,9 +9,11 @@ extern "C" {
 
 typedef struct _objects_t {
     lv_obj_t *main_page;
+    lv_obj_t *home;
+    lv_obj_t *speedometer_arc;
+    lv_obj_t *speedometer_scale;
     lv_obj_t *obj0;
-    lv_obj_t *obj1;
-    lv_obj_t *obj2;
+    lv_obj_t *speedometer_label;
 } objects_t;
 
 extern objects_t objects;

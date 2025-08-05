@@ -1,4 +1,7 @@
 {
     "idf.flashType": "UART",
-    "idf.portWin": "COM13"
+    "idf.portWin": "COM13",
+    "files.associations": {
+        "ui.h": "c"
+    }
 }

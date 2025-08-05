@@ -1,30 +1,5 @@
-// --------------------------------------------------------------------------
-//
-// Project       Wifi-ControlUnit
-//
-// File          app_gui.cpp
-//
-// Author        Axel Werner
-//
-// --------------------------------------------------------------------------
-// Changelog
-//
-// 2023-02-21  AWe   do the setup function before the task is created
-// 2019-10-01  AWe   initial version
-//
-// --------------------------------------------------------------------------
-
-// --------------------------------------------------------------------------
-// debug support
-// --------------------------------------------------------------------------
-
 static const char *TAG = "app_gui";
 #include "esp_log.h"
-
-// --------------------------------------------------------------------------
-//
-// --------------------------------------------------------------------------
-
 #include "freertos/FreeRTOS.h"
 #include "esp_heap_caps.h"
 
@@ -40,6 +15,7 @@ static const char *TAG = "app_gui";
 #include "lvgl_helpers.h"         // Assistant hardware driver related
 
 #include "ui/ui.h"
+#include "ui/vars.h"             // Variables used in the UI
 
 // Include desired font here for espressif/esp-iot-solution example
 
@@ -66,10 +42,10 @@ static const char *TAG = "app_gui";
 #endif
 
 #ifndef CONFIG_TASK_CORE_GUI
-   #define CONFIG_TASK_CORE_GUI        tskNO_AFFINITY
+   #define CONFIG_TASK_CORE_GUI        tskNO_AFFINITY // allow freeRTOS to choose the core
 #endif
-#ifndef CONFIG_TASK_PRIO_GUI
-   #define CONFIG_TASK_PRIO_GUI        6
+#ifndef CONFIG_TASK_PRIORITY_GUI
+   #define CONFIG_TASK_PRIORITY_GUI        6
 #endif
 
 // --------------------------------------------------------------------------
@@ -258,7 +234,7 @@ static void appGuiTask( void *pvParameter )
          xSemaphoreGive( xGuiSemaphore );
       }
 
-//      app_backlight_loop();
+
    }
 
    // A task should NEVER return
@@ -279,7 +255,7 @@ void appGui( void )
    ESP_LOGI( TAG, "appGuiTask" );
 
    // gui task init
-   xTaskCreatePinnedToCore( appGuiTask, "appGuiTask",  TASK_STACK_SIZE_GUI, NULL, CONFIG_TASK_PRIO_GUI, NULL, CONFIG_TASK_CORE_GUI );
+   xTaskCreatePinnedToCore( appGuiTask, "appGuiTask",  TASK_STACK_SIZE_GUI, NULL, CONFIG_TASK_PRIORITY_GUI, NULL, CONFIG_TASK_CORE_GUI );
 }
 
 // --------------------------------------------------------------------------

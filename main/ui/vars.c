@@ -21,6 +21,7 @@ bool CH1_UPDATE = false;
 bool CH1_POWER_ON = false;
 bool CH2_UPDATE = false;
 bool CH2_POWER_ON = false;
+int32_t SPEED_SPEEDOMETER = 0;
 
 const char *get_var_wifi_ssid(){return WIFI_SSID;}
 void set_var_wifi_ssid(const char *value){sprintf(WIFI_SSID,value);}
@@ -54,3 +55,9 @@ const char *get_var_ch2_v(){return CH2_V;}
 void set_var_ch2_v(const char *value){sprintf(CH2_V,value);}
 const char *get_var_ch2_a(){return CH2_A;}
 void set_var_ch2_a(const char *value){sprintf(CH2_A,value);}
+
+int32_t get_var_speed_speedometer(){return SPEED_SPEEDOMETER;}
+void set_var_speed_speedometer(int32_t value){
+    SPEED_SPEEDOMETER = value;
+    printf("SPEED_SPEEDOMETER: %d\n", SPEED_SPEEDOMETER);
+};
